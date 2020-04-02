@@ -2,7 +2,7 @@
 public class Obj {
 	private String targa;
 	private float cilindrata;
-	
+	//test
 	public Obj(String targa, float cilindrata) {
 		
 		this.setTarga(targa);
