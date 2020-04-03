@@ -4,10 +4,19 @@ public class Obj {
 	private float cilindrata;
 	public Obj(String targa, float cilindrata) {
 		
-		this.setTarga(targa);
-		this.setCilindrata(cilindrata);
+		this.targa = targa;
+		this.cilindrata = cilindrata;
 		
 	}
+	
+	public Obj(String targa, int cilindrata) {
+		
+		this.targa = targa;
+		this.cilindrata = (float)cilindrata;
+		
+	}
+	
+	public Obj() {};
 
 	public String getTarga() {
 		return targa;

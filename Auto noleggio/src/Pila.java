@@ -2,7 +2,7 @@ import java.util.Vector;
 
 public class Pila {
 
-	private Vector <Obj> pila = new Vector<Obj>(0);
+	private Vector <Obj> pila = new Vector<Obj>(10);
 	
 	public Pila () {};
 	
@@ -21,8 +21,8 @@ public class Pila {
 	}
 
 	public Obj top (int index) {
-		if (index == this.zerosize()) {
-			System.out.println("L'index " + index + ", ha una dimensione maggiore della pila");
+		if (index > this.zerosize()) {
+			System.out.println("L'index " + index + ", é fuori dalla pila");
 			index = this.zerosize();
 			System.out.println("perció é stato ridimensionato a  " + index);
 		}
